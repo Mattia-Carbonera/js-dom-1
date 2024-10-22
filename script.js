@@ -30,3 +30,13 @@ buttonOnOff.addEventListener("click", () => {
     ? lightOn.classList.remove("d-none")
     : lightOn.classList.add("d-none");
 });
+
+// switch scritte bottone
+
+buttonOnOff.addEventListener("click", () => {
+  if (buttonOnOff.textContent.includes("Accendi luce")) {
+    buttonOnOff.textContent = "Spegni luce";
+  } else if (buttonOnOff.textContent.includes("Spegni luce")) {
+    buttonOnOff.textContent = "Accendi luce";
+  }
+});
