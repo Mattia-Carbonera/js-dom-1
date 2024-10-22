@@ -34,9 +34,7 @@ buttonOnOff.addEventListener("click", () => {
 // switch scritte bottone
 
 buttonOnOff.addEventListener("click", () => {
-  if (buttonOnOff.textContent.includes("Accendi luce")) {
-    buttonOnOff.textContent = "Spegni luce";
-  } else if (buttonOnOff.textContent.includes("Spegni luce")) {
-    buttonOnOff.textContent = "Accendi luce";
-  }
+  buttonOnOff.textContent.includes("Accendi luce")
+    ? (buttonOnOff.textContent = "Spegni luce")
+    : (buttonOnOff.textContent = "Accendi luce");
 });
